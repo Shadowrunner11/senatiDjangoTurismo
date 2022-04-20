@@ -13,3 +13,8 @@ class LugarAPIView(generics.RetrieveAPIView):
     lookup_field="id"
     queryset= Lugar.objects.all()
     serializer_class = LugarListSerializer
+
+class LugarAPIViewByDepa(generics.RetrieveAPIView):
+    lookup_field="departamento"
+    queryset= Lugar.objects.all()
+    serializer_class = LugarListSerializer

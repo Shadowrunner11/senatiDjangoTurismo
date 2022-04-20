@@ -14,8 +14,9 @@ const Lugares = props =>{
     return(
         <div>
             <NavBar links={[
-            {route:'/lugares', text:'Lugares'},]}>
-
+                {route:'/lugares', text:'Lugares'},
+                {route:'/Mapa', text:'Mapa'}
+            ]}>
             </NavBar>
             
             <Box sx={{display:'flex',marginTop: 10}} >

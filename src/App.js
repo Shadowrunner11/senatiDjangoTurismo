@@ -3,6 +3,7 @@ import './App.css';
 import DetailView from './Molecules/DetailView';
 import Home from './Molecules/Home';
 import Lugares from './Molecules/Lugares';
+import Mapa from './Molecules/Mapa';
 
 
 function App() {
@@ -12,17 +13,18 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/lugares' element={<Lugares />}/>
+          <Route path='/mapa' element={<Mapa />}/>
           <Route path='/lugares/detail' element={<DetailView />}>
             <Route path=':lugarId' element={<DetailView />}/>
           </Route>
           <Route
-      path="*"
-      element={
-        <main style={{ padding: "1rem" }}>
-          <p>There's nothing here!</p>
-        </main>
-      }
-    />
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
   
           
         </Routes>
